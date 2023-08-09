@@ -4,8 +4,16 @@ document.getElementById ('add-task').onclick = function () {
    let task = document.getElementById('task').value
    console.log(task); // check the console to see if the task in the text box is being displayed
 
-   // refers to the container of the tasksk
-   let parentElement = document.getElementById('tasks-container');
+   // refers to the container of the tasks added
+   let taskSection = document.getElementById('tasks-section')
+
+   // creates a new container for each task element
+
+   let newContainer = document.createElement('div');
+   newContainer.className = "newContainer";
+
+   // appends the tasks container to the larger container
+   taskSection.appendChild(newContainer);
 
 // creates a task
    let newTask = document.createElement('div');
@@ -13,7 +21,7 @@ document.getElementById ('add-task').onclick = function () {
    newTask.className = "task";
 
 // appends the task into the container
-   parentElement.appendChild(newTask);
+   newContainer.appendChild(newTask);
 
 }
 

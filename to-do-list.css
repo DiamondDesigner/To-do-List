@@ -22,7 +22,6 @@ body {
 .top {
     display: flex;
     flex-direction: column;
-    border: 1px solid limegreen;
     margin-top: 5px;
     margin-left: 0px;
     margin-bottom: 20px;
@@ -32,6 +31,7 @@ body {
 
 .title {
     background-color: aquamarine;
+    
     margin: 0px;
     width: 100%;
 }
@@ -60,6 +60,13 @@ body {
     background-color: aqua;
 }
 
+.newContainer {
+    border-radius: 10px;
+    background-color: aqua;
+    box-shadow: 10px 10px rgb(90, 87, 87);
+    text-align: center;
+    margin: 20px;
+}
 .task {
-    border: 2px solid black;
+    color: black;
 }
