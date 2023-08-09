@@ -59,3 +59,7 @@ body {
     margin-left: 50px;
     background-color: aqua;
 }
+
+.task {
+    border: 2px solid black;
+}
